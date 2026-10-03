@@ -28,7 +28,7 @@ main:
 
   movb op, %r8b # load the operation for comparisons
   movq a, %rax  # and the LHS
-grep -n "done" calculator.s
+
   # Analyze operation and execute
   cmpb $'+', %r8b
   je add_op
